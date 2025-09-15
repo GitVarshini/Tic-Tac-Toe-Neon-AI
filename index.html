@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe - Neon AI</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<div id="welcomeScreen">
+  <div class="welcomeContent">
+    <h1>Tic Tac Toe</h1>
+    <button id="startBtn">Start Game</button>
+  </div>
+</div>
+<body>
+    <main>
+        <header id="header">
+            <div class="player player-active" id="xPlayerDisplay" onclick="choosePlayer('X')">X</div>
+            <h3 id="titleHeader">Choose</h3>
+            <div class="player" id="oPlayerDisplay" onclick="choosePlayer('O')">O</div>
+        </header>
+
+        <div id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <div id="scoreboard">
+            <span>X: <span id="xScore">0</span></span>
+            <span>O: <span id="oScore">0</span></span>
+            <span>Draw: <span id="drawScore">0</span></span>
+            <button id="resetScoreBtn">Reset Scores</button>
+        </div>
+
+        <button id="restartBtn">Restart Game</button>
+    </main>
+
+    <!-- Winner Modal -->
+    <div id="winnerModal" class="modal">
+        <div class="modal-content">
+            <h2 id="winnerMessage"></h2>
+            <button onclick="closeModal()">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
