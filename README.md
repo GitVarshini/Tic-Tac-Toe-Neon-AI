@@ -31,17 +31,6 @@ A visually stunning and interactive **Tic Tac Toe game** with an AI opponent pow
 4. Click on any empty cell to make your move.  
 5. Play against the AI and see if you can win!  
 
----
-
-## 🏆 Screenshots
-
-![Welcome Screen](screenshots/welcome.png)  
-![Gameplay](screenshots/gameplay.png)  
-![Winner Modal](screenshots/winner.png)  
-
-*(Tip: Add your own screenshots in a `screenshots/` folder for better presentation)*
-
----
 
 ## 🔧 How to Run Locally
 
